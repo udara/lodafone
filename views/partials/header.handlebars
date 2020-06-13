@@ -1,0 +1,88 @@
+<!-- Main navigation bar. -->
+<header class="devices">
+    <div class="container-fluid">
+        <!-- Constrains the nav items to 1200px wide. -->
+        <div class="container-xl">
+            <div class="row logo-row">
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                    <a href="/">
+                        <div class="logo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-9 col-md-9 col-lg-9 col-xl-8">
+                    <ul class="nav d-flex justify-content-center justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mt-1" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mt-1" href="#">Deals &
+                                Bundles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mt-1" href="#">Hot Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mt-1" href="#">About</a>
+                        </li>
+                        <a href="/shopping_cart"><li class="cart" >
+                            <span class="text-white cart_item shopping-cart-icon">0</span>
+                        </li></a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Responsive nav bar. -->
+<header class="mobile">
+    <div class="container-xl">
+        <!-- Logo column. -->
+        <div class="row p-3">
+            <div class="col-6">
+                <a href="/">
+                    <div class="logo-mobile">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Cart column. -->
+            <div class="col d-flex justify-content-end">
+                <!-- Cart icon. -->
+                <div class="cart">
+                    <a href="/shopping_cart" class="text-white cart_item shopping-cart-icon">0</a>
+                </div>
+            </div>
+
+            <!-- Burger column. -->
+            <div class="col d-flex justify-content-center">
+                <!-- Burger button. -->
+                <button class="navbar-toggler toggler-example burger-mobile" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fas fa-bars fa-1x"></i></button>
+            </div>
+
+            <!-- Nav links. -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="nav d-flex flex-column justify-content-start text-center p-4">
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-dark mt-1" href="#">Shop phones</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-dark mt-1" href="#">Deals &
+                            Bundles</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-dark mt-1" href="#">Hot Offers</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-dark mt-1" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

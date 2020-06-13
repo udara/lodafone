@@ -1,0 +1,699 @@
+/* Bootstrap override. */
+
+.container-fluid {
+padding-left: 0;
+padding-right: 0;
+}
+
+
+/* Main css */
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+h6 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-link {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #9f0aa7
+}
+    
+a:hover { 
+    text-decoration: none 
+}
+
+
+.logo-row {
+    height: 70px;
+}
+
+.logo {
+    background-image: url("assets/logo.png");
+    margin-top: 14px;
+    height: 39px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.logo-mobile {
+    background-image: url("assets/logo.png");
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 46px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cart {
+    background-image: url("assets/cart_item_added.png");
+    margin-top: 14px;
+    margin-left: 23px;
+    height: 38px;
+    width: 41px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cart_item {
+    margin-left: 28px;
+    font-weight: 500;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+}
+
+.nav-link {
+    padding: 14px 17px 0 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/*  burger menu  */
+.fa-1x {
+    font-size: 14px;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+.index-image {
+    background-image: url("assets/logo.png");
+    width: 290px;
+    margin-top: 14px;
+    height: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
+/* Flickity carousel  */
+
+/* external css: flickity.css */
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 400px;
+  margin-right: 10px;
+  background: rgb(148, 148, 148);
+  counter-increment: gallery-cell;
+}
+
+/* Slide carousel. */
+.btn-warning {
+    color: #202020;
+    background-color: #ffd900;
+    border-color: #ffd900;
+    border-radius: 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+}
+
+.slide-1 {
+    background-image: url("assets/iphone-11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-2 {
+    background-image: url("assets/oppo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-3 {
+    background-image: url("assets/samsung-s20.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter-field {
+    min-height: 130px;
+    margin-top: 70px;
+    margin-bottom: 20px; 
+}
+
+.purple {
+    color: rgb(59, 27, 63);
+}
+
+
+/* mobile hero panel products page. */
+.hero {
+    height: 450px;
+    margin: 0 auto;
+    background-image: url("assets/hero_mid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+
+/* Filter fields. */
+.filter-field-border {
+    border-left: 1px solid #909090;
+}
+
+.card {
+    border: none;
+    margin-top: 3px;
+}
+
+
+/* Product cards */
+.product-card {
+    max-width: 320px;
+    background-color: #fff;
+    border-color: #909090;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto;
+}
+
+.product-new {
+    height: 38px;
+    max-width: 320px;
+    background-color: #fff;
+    border-color: #9c2aa0;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+    background-color: #9c2aa0;
+    margin: 0 auto;
+}
+
+.product-new-placeholder {
+    height: 38px;
+    max-width: 320px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 220px;
+}
+
+.main-img {
+    height: 380px;
+    margin-bottom: 40px;
+}
+
+.brand-name {
+height: 10px;
+font-weight: 400;
+}
+
+.model-name {
+font-family: 'Titillium Web', sans-serif;
+font-size: 32px;
+font-weight: 700;
+}
+
+.price {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.per-month {
+    font-weight: 400;
+}
+
+.list {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.features {
+    min-height: 210px
+}
+
+.single-product-features {
+    min-height: 100px
+}
+
+
+/* Single product cards */
+.single-product-card {
+    max-width: 900px;
+    background-color: #fff;
+    border-color: #909090;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0 auto;
+}
+
+.black {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #3f3f3f;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.white{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: #909090 solid 1px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.silver {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(0.10turn, #6d6d6d, #e9e9e9);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.gold {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(0.10turn, #e9be00, #fff89c);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.red {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #d44141;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.green {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #7cb981;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.blue {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #759aa5;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.purple-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #8e6fa7;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.yellow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffe785;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+
+
+
+/* Products dropdown */
+.dropdown-item {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    left: 5%;
+    border-radius: 0;
+    width: 90%;
+}
+
+.filter-button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.collapse-button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.collapse-item {
+    font-size: 28px;
+}
+
+.collapse-category{
+    color: #303030;
+    font-weight: 400;
+}
+
+footer {
+    min-height: 400px;
+    background-color: #3a3a3a;
+}
+
+.footer-list {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+    color: #909090;
+}
+
+.footer-heading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Single products page. */
+.product-header {
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #909090;
+}
+
+
+/* Media queries MAX. */
+@media only screen and (max-width: 576px) {
+    .devices {
+        display: none;
+    }
+
+    .carousel-visible {
+        display: none;
+    }
+
+    .hero {
+        height: 500px;
+        background-image: url("assets/hero.jpg");
+    }
+
+    .logo-mobile {
+        background-image: url("assets/logo-marque.png");
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-field {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .select-link{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .devices {
+        display: none;
+    }
+
+    .carousel-visible {
+        display: none;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .cart {
+        margin-top: 6px;
+        margin-left: 0px;
+        width: 52px;
+        position: relative;
+    }
+
+    .cart_item {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 35px;
+        font-weight: 600;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+    }
+
+    .fa-1x {
+        font-size: 22px;
+    }
+
+    .navbar-toggler {
+        padding: 8px 10px 8px 10px;
+
+    }
+
+    .burger-mobile {
+        margin-top: 0px;
+    }
+
+
+    /* Responsive point size changes */
+    .list {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+  
+    h4 {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 21px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    .new {
+        font-size: 18px;
+    }
+
+    .model-name {
+        font-size: 36px;
+        }
+
+    .price {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .nav-link {
+        font-size: 26px;
+    }
+
+    .footer-heading {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .footer-list {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .btn-lg-text {
+        font-size: 26px;
+    }
+    
+    .black {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .white{
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .silver {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .gold {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .red {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .green {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .blue {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .purple-circle {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .yellow {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+
+    .main-img {
+        height: 420px;
+        margin-bottom: 50px;
+    }
+
+}
+
+/* Media queries MIN. */
+@media only screen and (min-width: 992px) {
+    .hero {
+        display: none;
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .filter-collapse {
+        display: none;
+    }
+}
+

@@ -1,0 +1,17 @@
+Model name
+Manufacturer
+Price
+Year of manufacture
+Colour
+Battery life
+Display size
+Camera pixel
+Night mode
+
+
+Customer first_name
+Customer last_name
+Email address
+
+
+

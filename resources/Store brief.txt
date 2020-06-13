@@ -1,0 +1,46 @@
+Design a basic web store, it should have items/orders and users. It should use mysql as a database, a orm and ember js
+IT should be deigned to use MVC
+It should have a api
+and if you have time a UI
+-  1 point, design a basic schema (can be as orm models)
+-  2 point create basic API
+-  3 create basic UI
+Should use a group git hub project/ that has a git ignore... should not  track any uneeded files
+
+
+How do you interact with the store?
+
+What type of store do we want?
+Is this about a one to many DB relationship?
+How many products?
+What relationships might we find in the database?
+How basic or advanced is this app?
+How long have we got to finish it?
+Do we need to mock up the front end before we start?
+I think it should look good
+Shall we use the DB tool Trent uses to design the schema?
+How many products?
+
+The shop
+Mobile phone store with 6 phones and some accesories
+
+What is inscope for this project?
+What out of scope?
+
+Core functionality from the database?
+- Search phones based on different properties
+- Add phones to a basket
+- View the basket
+- Take things out of the basket
+- Suggest accessories/or add accesories
+- Purchase history
+
+Nice to have functionality
+- Some comparison by attribute, bat life, weight, pixels
+- Customer table
+
+
+
+
+
+

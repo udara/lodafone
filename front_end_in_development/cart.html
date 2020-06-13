@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lodafones - Product</title>
+    <meta charset="UTF-8">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- boostrapCDN css for burger menu -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- boostrapCDN css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Fonts Titillium -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome for burger menu -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- custom JS -->
+    <script src="/js/burger.js"></script>
+    <!-- Flickity carousel css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+
+<body>
+
+    <!-- Main navigation bar. -->
+    <header class="devices">
+        <div class="container-fluid">
+
+            <!-- Constrains the nav items to 1200px wide. -->
+            <div class="container-xl">
+
+                <div class="row logo-row">
+
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                        <a href="index.html">
+                            <div class="logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-8">
+                        <ul class="nav d-flex justify-content-center justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main.html">Shop phones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main/deals_and_bundles">Deals &
+                                    Bundles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main/hot_offers">Hot Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="contact.htm">About</a>
+                            </li>
+                            <li class="cart" href="cart.html">
+                                <a class="text-white cart_item">2</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Responsive nav bar. -->
+    <header class="mobile">
+        <div class="container-xl">
+
+            <!-- Logo column. -->
+            <div class="row p-3">
+                <div class="col-6">
+                    <a href="index.html">
+                        <div class="logo-mobile">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Cart column. -->
+                <div class="col d-flex justify-content-end">
+                    <!-- Cart icon. -->
+                    <div class="cart" href="cart.html">
+                        <a class="text-white cart_item">2</a>
+                    </div>
+                </div>
+
+                <!-- Burger column. -->
+                <div class="col d-flex justify-content-center">
+                    <!-- Burger button. -->
+                    <button class="navbar-toggler toggler-example burger-mobile" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                        aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-1x"></i></button>
+                </div>
+
+                <!-- Nav links. -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                    <ul class="nav d-flex flex-column justify-content-start text-center p-4">
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main.html">Shop phones</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/deals_and_bundles">Deals &
+                                Bundles</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/hot_offers">Hot Offers</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="contact.htm">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Single product header. -->
+    <div class="container-xl">
+        <div class="product-header p-4 pt-5">
+            <div class="row">
+                <div class="col">
+                    <h3>Cart</h3>
+                </div>
+
+                <div class="col text-right select-link">
+                    <a class="text-dark" href="products_main.htm">
+                        <h3 class="text-link">Continue shopping</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Single product card. -->
+    <div class="container-xl">
+
+        <div class="row">
+
+            <div class="col-sm-12 mt-5">
+
+                <div class="single-product-card">
+
+                    <div class="row pt-4 pl-4 pr-4 pb-1">
+                        <div class="col-md-6">
+                            <h2 class="model-name pb-1">Total cost</h2>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <h2 class="model-name"><span class="per-month">Pay monthly</span> $71<span
+                                    class="per-month"> /month*</span></h2>
+                            <h4 class="mt-3 mb-4 price" style="font-weight: 300;">Total min. cost $986</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> <!-- end of row -->
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 mt-5">
+
+                <div class="single-product-card">
+
+                    <div class="row pt-4 pl-4 pr-4 pb-1">
+                        <div class="col-md-6">
+                            <h2 class="model-name"><span class="per-month">Product 1 (of 2)</span></h2>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <h2 class="model-name"><span class="per-month">Pay monthly</span> $71<span
+                                    class="per-month"> /month*</span></h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> <!-- end of row -->
+        </div>
+
+    </div>
+
+    <!-- Footer. -->
+    <footer class="mt-5">
+        <div class="footer-container p-4 pt-5">
+
+            <div class="row mt-3 ml-2 mr-2">
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">Tutors</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Trent Stollery</li>
+                        <li class="footer-list mb-3">Gwilyn Saunders</li>
+                        <li class="footer-list mb-3">Josh Campbell</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">The dev team</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Ana Marr</li>
+                        <li class="footer-list mb-3">Andy Nguyen</li>
+                        <li class="footer-list mb-3">Nathan Teakle</li>
+                        <li class="footer-list mb-3">Udara Ranasinghe</li>
+                        <li class="footer-list mb-3">Ben Cole</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">About the project</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">About page</li>
+                        <li class="footer-list mb-3">GitHub Readme</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">The course</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Full-Stack Web development</li>
+                        <li class="footer-list mb-3">University of Adelaide</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Popper CDN reuired for dropdown menus and needs to go before Bootstrap CDN link -->
+    <script src="popper.min.js"></script>
+    <!-- bootstrapCDN JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- Flickity JS for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>

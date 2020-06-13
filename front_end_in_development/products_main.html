@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lodafones - Products</title>
+    <meta charset="UTF-8">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- boostrapCDN css for burger menu -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- boostrapCDN css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Fonts Titillium -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome for burger menu -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- custom JS -->
+    <script src="/js/burger.js"></script>
+    <!-- Flickity carousel css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+
+<body>
+
+    <!-- Main navigation bar. -->
+    <header class="devices">
+        <div class="container-fluid">
+
+            <!-- Constrains the nav items to 1200px wide. -->
+            <div class="container-xl">
+
+                <div class="row logo-row">
+
+                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-4">
+                        <a href="index.html">
+                            <div class="logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-8">
+                        <ul class="nav d-flex justify-content-center justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main.html">Shop phones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main/deals_and_bundles">Deals &
+                                    Bundles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="products_main/hot_offers">Hot Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark mt-1" href="contact.htm">About</a>
+                            </li>
+                            <li class="cart" href="cart.html">
+                                <a class="text-white cart_item">2</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Responsive nav bar. -->
+    <header class="mobile">
+        <div class="container-xl">
+
+            <!-- Logo column. -->
+            <div class="row p-3">
+                <div class="col-6">
+                    <a href="index.html">
+                        <div class="logo-mobile">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Cart column. -->
+                <div class="col d-flex justify-content-end">
+                    <!-- Cart icon. -->
+                    <div class="cart" href="cart.html">
+                        <a class="text-white cart_item">2</a>
+                    </div>
+                </div>
+
+                <!-- Burger column. -->
+                <div class="col d-flex justify-content-center">
+                    <!-- Burger button. -->
+                    <button class="navbar-toggler toggler-example burger-mobile" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                        aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-1x"></i></button>
+                </div>
+
+                <!-- Nav links. -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                    <ul class="nav d-flex flex-column justify-content-start text-center p-4">
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main.html">Shop phones</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/deals_and_bundles">Deals &
+                                Bundles</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/hot_offers">Hot Offers</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="contact.htm">About</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Carousel. -->
+    <div class="carousel-visible">
+
+        <!-- Flickity HTML init. -->
+        <div class="container-fluid">
+            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+                <!-- Flickity carousel -->
+                <div class="carousel-cell p-4 slide-1">
+                    <div class="ml-5 mt-4">
+                        <h5 class="purple">The new iPhone 11</h5>
+                        <h6 class="purple">Just the right amount of everything.</h6>
+                        <p class="mt-3 mb-4 purple">Trade up and save with vodafone.</p>
+                        <button type="button" class="btn btn-warning mt-5">Shop now</button>
+                    </div>
+                </div>
+
+                <div class="carousel-cell p-4 slide-2">
+                    <div class="ml-5 mt-4">
+                        <h5 class="text-white">Oppo A91 4G</h5>
+                        <h5 class="text-white">from $13.86/month.</h5>
+                        <h6 class="text-white">Comes with 20GB of data.</h6>
+                        <p class="mt-3 text-white">128GB capacity.</p>
+                        <button type="button" class="btn btn-warning mt-3">Shop now</button>
+                    </div>
+                </div>
+
+                <div class="carousel-cell p-4 slide-3">
+                    <div class="ml-5 mt-4">
+                        <h5 class="text-white">Samsung Galaxy s20+</h5>
+                        <h5 class="text-white">for $99.00/month.</h5>
+                        <h6 class="text-white">Comes with 60GB of data.</h6>
+                        <p class="mt-3 text-white">128GB capacity. Phone for $48.50 per month for 36 months.</p>
+                        <button type="button" class="btn btn-warning mt-4">Shop now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Hero banner. -->
+    <div class="hero p-4 pt-5">
+        <h5 class="purple w-6">All the latest handsets</h5>
+        <h6 class="purple w-50">Get the best deals and bundles from lodafones.</h6>
+        <button type="button" class="btn btn-warning mt-4">Shop phones</button>
+
+    </div>
+
+
+    <!-- Filter fields. -->
+    <div class="container-xl">
+        <div class="filter-field p-3">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>BRANDS</h4>
+
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton1" data-toggle="dropdown" data-boundary="dd">
+                            Select brand
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Brand #1</a>
+                            <a class="dropdown-item p-2" href="#">Brand #2</a>
+                            <a class="dropdown-item p-2" href="#">Brand #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>PRICE</h4>
+
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton1" data-toggle="dropdown" data-boundary="dd">
+                            Price range
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Price range #1</a>
+                            <a class="dropdown-item p-2" href="#">Price range #2</a>
+                            <a class="dropdown-item p-2" href="#">Price range #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>COLOUR</h4>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton2" data-toggle="dropdown" data-boundary="dd">
+                            Select colour
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Colour #1</a>
+                            <a class="dropdown-item p-2" href="#">Colour #2</a>
+                            <a class="dropdown-item p-2" href="#">Colour #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>DISPLAY</h4>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton3" data-toggle="dropdown" data-boundary="dd">
+                            Select display size
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Display #1</a>
+                            <a class="dropdown-item p-2" href="#">Display #2</a>
+                            <a class="dropdown-item p-2" href="#">Display #3</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Filter fields mobile. -->
+    <div class="filter-collapse p-3">
+        <p>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">BRANDS</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#brands" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select brand
+            </a>
+
+            <div class="collapse" id="brands">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">PRICE</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#price" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select price
+            </a>
+
+            <div class="collapse" id="price">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">COLOUR</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#colour" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select colour
+            </a>
+
+            <div class="collapse" id="colour">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">DISPLAY</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#display" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select display size
+            </a>
+
+            <div class="collapse" id="display">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #3</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- product-cards. -->
+    <div class="container-xl">
+
+        <div class="row p-3">
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new pt-2 pl-3">
+                    <h4 class="text-white new">NEW</h4>
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G PLUS</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G PLUS</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new pt-2 pl-3">
+                    <h4 class="text-white new">NEW</h4>
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G PLUS</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
+                <div class="product-new-placeholder pt-2 pl-3">
+                </div>
+                <div class="product-card pt-2 pl-3 pr-3">
+                    <h4>4G</h4>
+                    <div class="text-center">
+                        <img src="assets/iphone_11_thumb.jpg" class="thumb">
+                    </div>
+                    <h4 class="brand-name mt-3 mb-4">Brand name</h4>
+                    <h2 class="model-name">Model name</h2>
+                    <h4 class="mt-3 mb-4 price">£Price <span class="per-month">per month</span></h4>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <ul>
+                            <li class="list mt-3 mb-3"><span style="font-weight: 600;">Colour:</span> Black, Silver,
+                                Platinum Gold, White</li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Display:</span> 5.8 inch Retina
+                            </li>
+                            <li class="list mb-3"><span style="font-weight: 600;">Camera:</span> 12 Megapixel</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-dark mt-4 mb-4">View product</button>
+                </div>
+            </div>
+
+        </div> <!-- end of row -->
+    </div>
+
+    <!-- Footer. -->
+    <footer class="mt-5">
+        <div class="footer-container p-4 pt-5">
+
+            <div class="row mt-3 ml-3 mr-3">
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">Tutors</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Trent Stollery</li>
+                        <li class="footer-list mb-3">Gwilyn Saunders</li>
+                        <li class="footer-list mb-3">Josh Campbell</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">The dev team</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Ana Marr</li>
+                        <li class="footer-list mb-3">Andy Nguyen</li>
+                        <li class="footer-list mb-3">Nathan Teakle</li>
+                        <li class="footer-list mb-3">Udara Ranasinghe</li>
+                        <li class="footer-list mb-3">Ben Cole</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">About the project</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">About page</li>
+                        <li class="footer-list mb-3">GitHub Readme</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-4">
+                    <h3 class="footer-heading">The course</h3>
+                    <ul>
+                        <li class="footer-list mt-3 mb-3">Full-Stack Web development</li>
+                        <li class="footer-list mb-3">University of Adelaide</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Popper CDN reuired for dropdown menus and needs to go before Bootstrap CDN link -->
+    <script src="popper.min.js"></script>
+    <!-- bootstrapCDN JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- Flickity JS for carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+
+</html>

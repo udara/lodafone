@@ -1,0 +1,22 @@
+Design work
+- 
+
+Back end
+- Set up file structure
+- Write app.js and routes
+- Create database
+- Create tables/model
+- populate db with a seed file
+- code controller ORM sequelize
+- wirte the Handlebars logic for outputting HTML
+
+
+Front end
+- Create simepl Bootstrap front end with pagination
+- display all products in cards
+- click on a product to get deteiled view (nice to have)
+- add a product to cart
+- remove product to crt
+- go to check out page to get a detailed view of the cart
+ 
+ 

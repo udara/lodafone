@@ -1,0 +1,141 @@
+ <!-- Filter fields. -->
+    <div class="container-xl">
+        <div class="filter-field p-3">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>BRANDS</h4>
+
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton1" data-toggle="dropdown" data-boundary="dd">
+                            Select brand
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Brand #1</a>
+                            <a class="dropdown-item p-2" href="#">Brand #2</a>
+                            <a class="dropdown-item p-2" href="#">Brand #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>PRICE</h4>
+
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton2" data-toggle="dropdown" data-boundary="dd">
+                            Price range
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Price range #1</a>
+                            <a class="dropdown-item p-2" href="#">Price range #2</a>
+                            <a class="dropdown-item p-2" href="#">Price range #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>COLOUR</h4>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton3" data-toggle="dropdown" data-boundary="dd">
+                            Select colour
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Colour #1</a>
+                            <a class="dropdown-item p-2" href="#">Colour #2</a>
+                            <a class="dropdown-item p-2" href="#">Colour #3</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 filter-field-border mb-4">
+                    <h4>DISPLAY</h4>
+                    <div class="dropdown">
+                        <button class="btn btn-block btn-light dropdown-toggle filter-button" type="button"
+                            id="dropdownMenuButton4" data-toggle="dropdown" data-boundary="dd">
+                            Select display size
+                        </button>
+                        <div class="dropdown-menu p-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item p-2" href="#">Display #1</a>
+                            <a class="dropdown-item p-2" href="#">Display #2</a>
+                            <a class="dropdown-item p-2" href="#">Display #3</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter fields mobile. -->
+    <div class="filter-collapse p-3">
+        <p>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">BRANDS</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#brands" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select brand
+            </a>
+
+            <div class="collapse" id="brands">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Brand #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">PRICE</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#price" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select price
+            </a>
+
+            <div class="collapse" id="price">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Price range #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">COLOUR</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#colour" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select colour
+            </a>
+
+            <div class="collapse" id="colour">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Colour #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2 mt-2">
+            <h4 class="collapse-category">DISPLAY</h4>
+            <a class="btn btn-block btn-light collapse-button" data-toggle="collapse" href="#display" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select display size
+            </a>
+
+            <div class="collapse" id="display">
+                <div class="card card-body">
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #1</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #2</a>
+                    <a class="dropdown-item collapse-item p-3 text-center" href="#">Display size #3</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
