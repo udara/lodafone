@@ -1,7 +1,15 @@
 <!-- product-card -->
 <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-4 mb-4">
     <div class="product-card pt-2 pl-3 pr-3">
-        <h4>4G</h4>
+        
+        {{#if fourG}}
+        <h4 style="font-weight: 600;"> {{ fourG }}</h4>
+        {{/if}}
+
+        {{#unless fourG}}
+        <h4 style="font-weight: 600;">3G Network</h4>
+        {{/unless}}
+
         <div class="text-center">
             <img src="/phone_images/{{ products.0.product_image }}" class="thumb">
         </div>

@@ -12,7 +12,6 @@ module.exports = function(sequelize, DataTypes) {
   }
   );
 
-  /* Building the association with Models  */
   Model.associate = model => {
       Model.belongsTo(model.brand, { foreignKey:'brand_id', sourceKey: 'id' });
       Model.hasMany(model.product, { foreignKey:'local_model_id' })

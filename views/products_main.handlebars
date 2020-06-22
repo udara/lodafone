@@ -14,12 +14,14 @@
 <div class="container-xl">
 
     <div class="row p-3">
+
+        {{!-- {{#if name products}}  --}}
         {{#each model}}
-        {{!-- there is a product associated --}}
         {{#if products}} 
         {{> product_card }}
         {{/if}}
         {{/each}}
+        
     </div>
 </div>
 
